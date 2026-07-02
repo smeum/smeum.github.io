@@ -1,0 +1,634 @@
+{
+  "meta": {
+    "updatedAt": "2026-06-29 16:22 EDT"
+  },
+  "profile": {
+    "name": "Sungmin Eum",
+    "title": "Research Scientist/PI at [US Army Research Laboratory (ARL)](https://arl.devcom.army.mil/)\nAdjunct Faculty at the [University of Maryland, College Park](https://umd.edu/)",
+    "tagline": "Computer vision, machine learning, robotics, and language-grounded AI with an emphasis on models that solve complex tasks with limited supervision.",
+    "email": "sungmin dot eum dot civ at army dot mil | smeum at umd dot edu",
+    "location": "MD, VA, Washington DC, USA",
+    "affiliation": "U.S. Army Research Laboratory · University of Maryland",
+    "photo": "assets/images/sungminFace_v2.jpg",
+    "cvUrl": "#",
+    "scholarUrl": "https://scholar.google.com/citations?user=tT5GULUAAAAJ&hl=en"
+  },
+  "featured": [
+    {
+      "label": "Focus",
+      "value": "Vision, language, and robotics"
+    },
+    {
+      "label": "Now",
+      "value": "Grounded perception and generative systems"
+    },
+    {
+      "label": "Teaches",
+      "value": "Large Language Models and Deep Learning for Computer Vision"
+    }
+  ],
+  "sections": {
+    "about": "I am a research scientist and a principal investigator (PI) at the [US Army Research Laboratory](https://arl.devcom.army.mil/). I received my Ph.D. from the [University of Maryland, College Park](https://umd.edu/) in 2017 under the supervision of [David Doermann](https://engineering.buffalo.edu/computer-science-engineering/people/faculty-directory.host.html/content/shared/engineering/computer-science-engineering/profiles/faculty/ladder/doermann-david.html), after earning my B.S. and M.S. from [Yonsei University](https://www.yonsei.ac.kr/en_sc/index.do). My work has also included research internships at [Palo Alto Research Center (PARC)](https://www.sri.com/research/future-concepts-division/) (Now, [Stanford Research Institute (SRI)](https://www.sri.com/)) and [ARL](https://arl.devcom.army.mil/).\n\nI also serve as an adjunct faculty in the [ECE](https://ece.umd.edu/) Department & [MAGE](https://mage.umd.edu/) at the [University of Maryland, College Park](https://umd.edu/), where I teach graduate/undergraduate courses: Large Language Models (LLMs), Deep Learning for Computer Vision.",
+    "research": "My research spans computer vision, machine learning, artificial intelligence, robotics, and natural language processing. I study how intelligent systems learn, represent, and reason from visual and language signals, particularly under limited supervision. More recently, I have been exploring machine unlearning, the ability to make AI models selectively forget learned knowledge, to better understand where knowledge resides within learned representations and how it can be modified.",
+    "teaching": ""
+  },
+  "publications": [
+    {
+      "title": "SynPlay: Importing Real-world Diversity for a Synthetic Human Dataset",
+      "authors": "*Jinsub Yim, *Hyungtae Lee, *Sungmin Eum, Yi-Ting Shen, Yan Zhang, Heesung Kwon, Shuvra S. Bhattacharyya (* = equal contribution)",
+      "venue": "WACV",
+      "year": 2026,
+      "type": "Conference",
+      "image": "assets/images/publications/Yim_arXiv2024.png",
+      "abstract": "A synthetic human dataset designed to better import real-world diversity into controlled training data for perception systems.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://openaccess.thecvf.com/content/WACV2026/papers/Yim_SynPlay_Large-Scale_Synthetic_Human_Data_with_Real-World_Diversity_for_Aerial-View_WACV_2026_paper.pdf"
+        },
+        {
+          "label": "Project",
+          "url": "http://synplaydataset.github.io/"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "UAV4D: Dynamic Neural Rendering of Human-Centric UAV Imagery using Gaussian Splatting",
+      "authors": "Jaehoon Choi, Dongki Jung, Christopher Maxey, Yonghan Lee, Sungmin Eum, Dinesh Manocha, Heesung Kwon",
+      "venue": "AAAI",
+      "year": 2026,
+      "type": "Conference",
+      "image": "assets/images/publications/Choi_AAAI2026.png",
+      "abstract": "A dynamic neural rendering method for human-centric UAV imagery using Gaussian Splatting to model motion-aware aerial capture.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/37333"
+        },
+        {
+          "label": "Project",
+          "url": "https://uav4d.github.io/"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "MoRe: Monocular Geometry Refinement via Graph Optimization for Cross-View Consistency",
+      "authors": "Dongki Jung, Jaehoon Choi, Yonghan Lee, Sungmin Eum, Heesung Kwon, Dinesh Manocha",
+      "venue": "WACV",
+      "year": 2026,
+      "type": "Conference",
+      "image": "assets/images/publications/Jung_WACV2026.png",
+      "abstract": "A monocular geometry refinement framework that uses graph optimization to enforce cross-view consistency in reconstructed scene structure.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://openaccess.thecvf.com/content/WACV2026/papers/Jung_MoRe_Monocular_Geometry_Refinement_via_Graph_Optimization_for_Cross-View_Consistency_WACV_2026_paper.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "AutoComPose: Automatic Generation of Pose Transition Descriptions for Composed Pose Retrieval Using Multimodal LLMs",
+      "authors": "*Yi-Ting Shen, *Sungmin Eum, Doheon Lee, Rohit Shete, Chiao-Yi Wang, Heesung Kwon, Shuvra S. Bhattacharyya (* = equal contribution)",
+      "venue": "ICCV",
+      "year": 2025,
+      "type": "Conference",
+      "image": "assets/images/publications/Shen_ICCV2025.png",
+      "abstract": "A multimodal LLM framework for automatically generating pose transition descriptions to support composed pose retrieval.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Shen_AutoComPose_Automatic_Generation_of_Pose_Transition_Descriptions_for_Composed_Pose_ICCV_2025_paper.pdf"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/DennisShen/AutoComPose-ICCV2025"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "title": "UAVTwin: Neural Digital Twins for UAVs using Gaussian Splatting",
+      "authors": "Jaehoon Choi, Dongki Jung, Yonghan Lee, Sungmin Eum, Dinesh Manocha, Heesung Kwon",
+      "venue": "arXiv",
+      "year": 2025,
+      "type": "Preprint",
+      "image": "assets/images/publications/Choi_ArXiv2025.png",
+      "abstract": "A neural digital twin framework for UAVs using Gaussian Splatting to represent and simulate aerial platforms and captured environments.",
+      "links": [
+        {
+          "label": "Preprint",
+          "url": "https://arxiv.org/pdf/2504.02158"
+        },
+        {
+          "label": "Project",
+          "url": "https://uavgsim.github.io/"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "Generative Spatiotemporal Data Augmentation",
+      "authors": "Jinfan Zhou, Lixin Luo, Sungmin Eum, Heesung Kwon, Jeong Joon Park",
+      "venue": "arXiv",
+      "year": 2025,
+      "type": "Preprint",
+      "image": "assets/images/publications/Zhou_ArXiv2025.png",
+      "abstract": "A generative augmentation framework for spatiotemporal data that expands training diversity while preserving task-relevant motion structure.",
+      "links": [
+        {
+          "label": "Preprint",
+          "url": "https://arxiv.org/pdf/2512.12508"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "Coarse-to-Fine Hierarchical Alignment for UAV-based Human Detection using Diffusion Models",
+      "authors": "Wenda Li, Meng Wu, Liangzhao Chen, Sungmin Eum, Heesung Kwon, Qing Qu",
+      "venue": "arXiv",
+      "year": 2026,
+      "type": "Preprint",
+      "image": "assets/images/publications/Li_ArXiv2026.png",
+      "abstract": "A diffusion-based coarse-to-fine alignment method for UAV-based human detection that improves localization under challenging aerial viewpoints.",
+      "links": [
+        {
+          "label": "Preprint",
+          "url": "https://arxiv.org/pdf/2512.13869"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "Two Teachers Are Better Than One: Leveraging Depth In Training Only For Unsupervised Obstacle Segmentation",
+      "authors": "Sungmin Eum, Hyungtae Lee, Heesung Kwon, Phil Osteen, Andre Harrison",
+      "venue": "International Conference on Intelligent Robots and Systems (IROS)",
+      "year": 2024,
+      "type": "Conference",
+      "image": "assets/images/publications/Eum_IROS2024.png",
+      "abstract": "An unsupervised obstacle segmentation approach that uses depth during training only, guided by a dual-teacher setup for stronger visual learning.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/abstract/document/10801483"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "SEE&TELL: Controllable Narrative Generation from Images",
+      "authors": "Stephanie Lukin, Sungmin Eum",
+      "venue": "AAAI Workshop: Creative AI Across Modalities",
+      "year": 2023,
+      "type": "Conference",
+      "image": "assets/images/publications/Lukin_AAAIW2023.png",
+      "abstract": "A controllable generation framework that produces narratives from image input while maintaining user influence over the resulting storyline.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://openreview.net/forum?id=_8Ity3P03Z1"
+        }
+      ],
+      "featured": false
+    }, 
+    {
+      "title": "Exploring Cross-Domain Pretrained Model for Hyperspectral Image Classification",
+      "authors": "Hyungtae Lee, Sungmin Eum, Heesung Kwon",
+      "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+      "year": 2022,
+      "type": "Journal",
+      "image": "assets/images/publications/Lee_TGRS2022.png",
+      "abstract": "A study of cross-domain pretrained models for hyperspectral image classification and how transfer priors affect remote sensing performance.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9750071"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "Negative Samples are at Large: Leveraging Hard-distance Elastic Loss for Re-identification",
+      "authors": "Hyungtae Lee, Sungmin Eum, Heesung Kwon",
+      "venue": "ECCV",
+      "year": 2022,
+      "type": "Conference",
+      "image": "assets/images/publications/Lee_ECCV2022.png",
+      "abstract": "A re-identification method that improves metric learning by strengthening the role of difficult negative samples during optimization.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136840595.pdf"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/htlee79/moreid"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "MA3: Model-Accuracy Aware Anytime Planning with Simulation Verification for Navigating Complex Terrains",
+      "authors": "Manash Pratim Das, Damon M. Canover, Sungmin Eum, Heesung Kwon, Maxim Likhachev",
+      "venue": "SoCS",
+      "year": 2022,
+      "type": "Conference",
+      "image": "assets/images/publications/Das_SoCS2022.png",
+      "abstract": "An anytime planning framework that reasons jointly about model fidelity and simulation-backed verification in difficult terrain.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ojs.aaai.org/index.php/SOCS/article/view/21753"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "Sketch-and-Fill Network for Semantic Segmentation",
+      "authors": "Youngsaeng Jin, Sungmin Eum, David Han, Hanseok Ko",
+      "venue": "IEEE Access",
+      "year": 2021,
+      "type": "Journal",
+      "image": "assets/images/publications/Jin_IEEEAccess2021.png",
+      "abstract": "A segmentation architecture that uses sparse sketch-like guidance to complete dense semantic structure.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9453770"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "Semantics to Space (S2S): Embedding Semantics into Spatial Space for Zero-shot Verb-object Query Inferencing",
+      "authors": "Sungmin Eum, Heesung Kwon",
+      "venue": "ICPR",
+      "year": 2020,
+      "type": "Conference",
+      "image": "assets/images/publications/Eum_ICPR2020.png",
+      "abstract": "A zero-shot inferencing approach that embeds semantics into spatial structure for verb-object query understanding.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9412389"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "S-DOD-CNN: Doubly injecting spatially-preserved object information for event recognition",
+      "authors": "Hyungtae Lee, Sungmin Eum, Heesung Kwon",
+      "venue": "ICASSP",
+      "year": 2020,
+      "type": "Conference",
+      "image": "assets/images/publications/Lee_ICASSP2020.png",
+      "abstract": "A unified event recognition framework that improves recognition by preserving and doubly injecting spatial object detection features into the event classifier through both shared representations and direct spatial feature fusion.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9052953"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "SomethingFinder: Localizing Undefined Regions Using Referring Expressions",
+      "authors": "Sungmin Eum, David Han, Gordon Briggs",
+      "venue": "CVPR Workshops",
+      "year": 2020,
+      "type": "Conference",
+      "image": "assets/images/publications/Eum_CVPRW2020.png",
+      "abstract": "A language-guided method for identifying and localizing underspecified regions in an image from referring expressions.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://openaccess.thecvf.com/content_CVPRW_2020/html/w26/Eum_SomethingFinder_Localizing_Undefined_Regions_Using_Referring_Expressions_CVPRW_2020_paper.html"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "ME R-CNN: Multi-expert R-CNN for Object Detection",
+      "authors": "Hyungtae Lee, Sungmin Eum, Heesung Kwon",
+      "venue": "IEEE Transactions on Image Processing",
+      "year": 2019,
+      "type": "Journal",
+      "image": "assets/images/publications/Lee_TIP2019.png",
+      "abstract": "A multi-expert detection framework that improves object detection by specializing submodels across object appearance regimes.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/abstract/document/8827587"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "A RUGD Dataset for Autonomous Navigation and Visual Perception in Unstructured Outdoor Environments",
+      "authors": "Maggie Wigness, Sungmin Eum, John G Rogers, David Han, Heesung Kwon",
+      "venue": "IROS",
+      "year": 2019,
+      "type": "Conference",
+      "image": "assets/images/publications/Wigness_IROS2019.png",
+      "abstract": "A dataset for navigation and visual perception in rugged outdoor settings, aimed at autonomous systems operating beyond structured roads.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/abstract/document/8968283"
+        },
+        {
+          "label": "Dataset",
+          "url": "http://rugd.vision/"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "Planar Content Selection in Images and Videos Using Frontalness",
+      "authors": "Sungmin Eum, David Doermann",
+      "venue": "Pattern Recognition Letters",
+      "year": 2019,
+      "type": "Journal",
+      "image": "assets/images/publications/Eum_PRL2019.png",
+      "abstract": "A method for selecting planar image and video content by reasoning about frontalness as a useful geometric prior.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0167865517302763"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "Is Pretraining Necessary for hyperspectral image classification?",
+      "authors": "Hyungtae Lee, Sungmin Eum, Heesung Kwon",
+      "venue": "IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
+      "year": 2019,
+      "type": "Conference",
+      "image": "assets/images/publications/Lee_IGARSS2018.png",
+      "abstract": "A study of whether large-scale pretraining is necessary for hyperspectral image classification and how transfer strategies affect downstream performance.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/abstract/document/8898734"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "DOD-CNN: Doubly-injecting Object Information for Event Recognition",
+      "authors": "Hyungtae Lee, Sungmin Eum, Heesung Kwon",
+      "venue": "International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "year": 2019,
+      "type": "Conference",
+      "image": "assets/images/publications/Lee_ICASSP2019.png",
+      "abstract": "An event recognition framework that improves accuracy by injecting object detection cues into the classifier through multiple pathways.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/abstract/document/8683208"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "Object and Text-guided Semantics for CNN-based Activity Recognition",
+      "authors": "Sungmin Eum, Christopher Reale, Heesung Kwon, Claire Bonial, Clare Voss",
+      "venue": "International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "year": 2019,
+      "type": "Conference",
+      "image": "assets/images/publications/Eum_ICASSP2019.png",
+      "abstract": "A CNN-based activity recognition approach that integrates both object cues and text-guided semantic structure for better scene understanding.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/abstract/document/8682698"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "Cross-domain CNN for hyperspectral image classification",
+      "authors": "Hyungtae Lee, Sungmin Eum, Heesung Kwon",
+      "venue": "IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
+      "year": 2018,
+      "type": "Conference",
+      "image": "assets/images/publications/Lee_IGARSS2018.png",
+      "abstract": "A cross-domain convolutional model for hyperspectral image classification that studies transfer across sensing domains and labeled data regimes.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/abstract/document/8519419"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "Going deeper with CNN in malicious crowd event classification",
+      "authors": "Sungmin Eum, Hyungtae Lee, Heesung Kwon",
+      "venue": "SPIE Defense and Commercial Sensing (SPIE DCS)",
+      "year": 2018,
+      "type": "Conference",
+      "image": "assets/images/publications/Eum_SPIEDCS2018.png",
+      "abstract": "An exploration of deeper convolutional architectures for malicious crowd event classification under challenging visual conditions.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10646/1064616/Going-deeper-with-CNN-in-malicious-crowd-event-classification/10.1117/12.2306086.short?SSO=1"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "Exploitation of semantic keywords for malicious event classification",
+      "authors": "Hyungtae Lee, Sungmin Eum, Joel Levis, Heesung Kwon, James Michaelis, Michael Kolodny (* = equal contribution)",
+      "venue": "International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "year": 2018,
+      "type": "Conference",
+      "image": "assets/images/publications/Eum_ICASSP2018.png",
+      "abstract": "A malicious event classification method that leverages semantic keyword structure to improve discrimination in complex crowd scenes.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/abstract/document/8462485"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "IOD-CNN: Integrating object detection networks for event recognition",
+      "authors": "Sungmin Eum, Hyungtae Lee, Heesung Kwon, David Doermann (* = equal contribution)",
+      "venue": "International Conference on Image Processing (ICIP)",
+      "year": 2017,
+      "type": "Conference",
+      "image": "assets/images/publications/Eum_ICIP2017.png",
+      "abstract": "An event recognition architecture that integrates object detection networks directly into the event understanding pipeline.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/abstract/document/8296406"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "Content selection using frontalness evaluation of multiple frames",
+      "authors": "Sungmin Eum, David Doermann",
+      "venue": "International Conference on Pattern Recognition (ICPR)",
+      "year": 2016,
+      "type": "Conference",
+      "image": "assets/images/publications/Eum_ICPR2016.png",
+      "abstract": "A multi-frame content selection approach using frontalness evaluation, recognized with the ICPR Best Student Paper distinction.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/abstract/document/7900160"
+        },
+        {
+          "label": "Award",
+          "url": "https://iapr.org/awards/icpr-awards/p-zamperoni-award/"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "JH2R: Joint Homography Estimation for Highlight Removal",
+      "authors": "Sungmin Eum, Hyungtae Lee, David Doermann",
+      "venue": "British Machine Vision Conference (BMVC)",
+      "year": 2015,
+      "type": "Conference",
+      "image": "assets/images/publications/Eum_BMVC2015.png",
+      "abstract": "A joint homography estimation method for robust highlight removal in challenging document and scene imagery.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "http://www.bmva.org/bmvc/2015/papers/paper049/paper049.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "Sharpness-aware document image mosaicing using graphcuts",
+      "authors": "Sungmin Eum, David Doermann",
+      "venue": "International Conference on Image Processing (ICIP)",
+      "year": 2014,
+      "type": "Conference",
+      "image": "assets/images/publications/Eum_ICIP2014.png",
+      "abstract": "A graphcut-based document mosaicing method that explicitly accounts for sharpness while assembling image fragments.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/abstract/document/7025521"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "Enhancing Light Blob Detection for Intelligent Headlight Control Using Lane Detection",
+      "authors": "Sungmin Eum, Ho Gi Jung",
+      "venue": "IEEE Transactions on Intelligent Transportation Systems (T-ITS)",
+      "year": 2013,
+      "type": "Journal",
+      "image": "assets/images/publications/Eum_TITS2013.png",
+      "abstract": "A lane-aware light blob detection approach for intelligent headlight control in real driving environments.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/abstract/document/6408201"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "Recognizability assessment of facial images for automated teller machine applications",
+      "authors": "Jae Kyu Suhr, Sungmin Eum, Ho Gi Jung, Gen Li, Gahyun Kim, Jaihie Kim",
+      "venue": "Pattern Recognition (PR)",
+      "year": 2012,
+      "type": "Journal",
+      "image": "assets/images/publications/Suhr_PR2012.png",
+      "abstract": "An evaluation framework for facial image recognizability tailored to automated teller machine deployment scenarios.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0031320311004663"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "Face liveness detection based on texture and frequency analyses",
+      "authors": "Gahyun Kim, Sungmin Eum, Jae Kyu Suhr, Dong Ik Kim, Kang Ryoung Park, Jaihie Kim",
+      "venue": "International Conference on Biometrics (ICB)",
+      "year": 2012,
+      "type": "Conference",
+      "image": "assets/images/publications/Kim_ICB2012.png",
+      "abstract": "A face liveness detection method combining texture and frequency analysis for biometric security applications.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/abstract/document/6199760"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "title": "Face recognizability evaluation for ATM applications with exceptional occlusion handling",
+      "authors": "Sungmin Eum, Jae Kyu Suhr, Jaihie Kim",
+      "venue": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+      "year": 2011,
+      "type": "Conference",
+      "image": "assets/images/publications/Eum_CVPRW2011.png",
+      "abstract": "A recognizability evaluation framework for ATM facial imagery with explicit handling of severe occlusion cases.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ieeexplore.ieee.org/abstract/document/5981883"
+        }
+      ],
+      "featured": false
+    }
+  ],
+  "news": [
+    {
+      "date": "2024-10",
+      "text": "Attending IROS 2024 in Abu Dhabi and presenting an oral paper on leveraging depth during training for unsupervised obstacle segmentation."
+    },
+    {
+      "date": "2024-08",
+      "text": "SynPlay dataset paper posted on arXiv with an accompanying project page."
+    },
+    {
+      "date": "2023-02",
+      "text": "Attended AAAI 2023 in Washington, DC and presented work at the Creative AI Across Modalities workshop."
+    },
+    {
+      "date": "2022-07",
+      "text": "Paper accepted to ECCV on hard-distance elastic loss for person re-identification."
+    },
+    {
+      "date": "2021-01",
+      "text": "ME R-CNN was featured in the Army Top 10 Advances of 2020."
+    }
+  ],
+  "gallery": {
+    "enabled": true,
+    "secretPath": "nocturne-room",
+    "intro": "A small private room for visual studies, travel fragments, and image sequences that sit adjacent to the research work.",
+    "collections": [
+      {
+        "title": "Paul Before the Earthquake",
+        "year": "2026",
+        "description": "The composition portrays the stillness preceding one of the New Testament's most remarkable prison scenes. Bound in chains yet at peace, Paul is shown not in anticipation of deliverance but in quiet devotion. The work invites reflection on the contrast between outward confinement and inward freedom. Inspired by Acts 16.",
+        "cover": "assets/images/gallery/before_the_earthquake_2026.png"
+      },
+      {
+        "title": "The Weight of Silence",
+        "year": "2026",
+        "description": "The voyage, the ear, and the resting eye become quiet witnesses to the tension held before the first note and after the last, where silence carries as much meaning as music itself. Inspired by my wife, J.",
+        "cover": "assets/images/gallery/the_weight_of_silence_2026.png"
+      }
+    ]
+  }
+}

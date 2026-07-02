@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sungmin Eum</title>
+    <meta
+      name="description"
+      content="Personal academic website with publications, research notes, profile management, and a hidden gallery."
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <main id="home">
+        <section class="hero">
+          <div class="hero-main">
+            <aside class="hero-aside hero-aside-left">
+              <div class="portrait-wrap compact">
+                <img id="profile-photo" alt="Portrait" />
+              </div>
+            </aside>
+            <div class="hero-copy">
+              <h1 id="profile-name">Loading...</h1>
+              <p class="hero-title" id="profile-title"></p>
+              <p class="hero-email" id="profile-email-inline"></p>
+              <p class="hero-intro" id="profile-intro"></p>
+            </div>
+            <aside class="hero-aside hero-aside-right"></aside>
+          </div>
+        </section>
+
+        <section class="content-section single-column-section" id="about">
+          <div class="section-heading section-heading-narrow">
+            <p class="eyebrow">About</p>
+          </div>
+          <div class="section-body prose prose-wide rich-prose" id="about-text"></div>
+        </section>
+
+        <section class="content-section single-column-section" id="research">
+          <div class="section-heading section-heading-narrow">
+            <p class="eyebrow">Research</p>
+          </div>
+          <div class="section-body single-flow-copy">
+            <div class="prose prose-wide rich-prose" id="research-text"></div>
+          </div>
+        </section>
+
+        <section class="content-section publication-section" id="publications">
+          <div class="section-heading publication-head">
+            <p class="eyebrow">Publications</p>
+            <div class="pub-controls" aria-label="Publication filters">
+              <button class="chip active" data-filter="Recent">Recent</button>
+              <button class="chip" data-filter="All">All</button>
+              <button class="chip" data-filter="Conference">Conference</button>
+              <button class="chip" data-filter="Journal">Journal</button>
+              <button class="chip" data-filter="Preprint">Preprint</button>
+            </div>
+          </div>
+          <div class="featured-paper" id="featured-paper"></div>
+          <div class="publication-list publication-grid" id="publication-list"></div>
+        </section>
+
+        <section class="content-section gallery-section" id="gallery" aria-live="polite">
+          <div class="gallery-header">
+            <div>
+              <p class="eyebrow">Apricity: the warmth of the sun in winter</p>
+              <button class="gallery-toggle" id="gallery-toggle" type="button" aria-expanded="false" aria-controls="gallery-content">
+                Reveal gallery
+              </button>
+            </div>
+          </div>
+          <div class="gallery-content hidden" id="gallery-content">
+            <div class="gallery-grid" id="gallery-grid"></div>
+          </div>
+        </section>
+
+        <footer class="site-footer">
+          <div class="visitor-map">
+            <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=FUxLtZFxdDgw9W9cADM6pop2XKfiY9yZ3XqUbexV8cw&cl=ffffff&w=a"></script>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <template id="publication-template">
+      <article class="publication-card">
+        <div class="publication-thumb-wrap">
+          <img class="publication-thumb" alt="Publication preview" />
+        </div>
+        <div class="publication-card-body">
+          <div class="publication-meta">
+            <span class="publication-type"></span>
+            <span class="publication-year"></span>
+          </div>
+          <h3 class="publication-title"></h3>
+          <p class="publication-authors"></p>
+          <p class="publication-venue"></p>
+          <p class="publication-abstract"></p>
+          <div class="publication-links"></div>
+        </div>
+      </article>
+    </template>
+
+    <script type="module" src="assets/js/site.js"></script>
+  </body>
+</html>

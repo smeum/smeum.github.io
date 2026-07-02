@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Editor | Smeum</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body class="admin-body">
+    <main class="admin-shell">
+      <header class="admin-header">
+        <div>
+          <p class="eyebrow">Editor</p>
+          <h1>Manage profile, publications, and the hidden gallery.</h1>
+        </div>
+        <div class="admin-actions">
+          <a class="button secondary" href="../index.html">View site</a>
+          <button class="button primary" id="download-json" type="button">Export `site.json`</button>
+        </div>
+      </header>
+
+      <section class="admin-note">
+        <p>
+          This editor runs in the browser for GitHub Pages compatibility. Update the fields, export the file,
+          and replace `data/site.json` in your repository before committing.
+        </p>
+      </section>
+
+      <section class="admin-grid">
+        <form id="site-form" class="editor-form">
+          <div class="editor-panel">
+            <div class="panel-heading">
+              <p class="eyebrow">Profile</p>
+              <h2>Identity and portrait</h2>
+            </div>
+            <label>
+              Name
+              <input name="profile.name" type="text" />
+            </label>
+            <label>
+              Title
+              <input name="profile.title" type="text" />
+            </label>
+            <label>
+              Tagline
+              <textarea name="profile.tagline" rows="2"></textarea>
+            </label>
+            <label>
+              Intro paragraph
+              <textarea name="profile.intro" rows="4"></textarea>
+            </label>
+            <label>
+              Email
+              <input name="profile.email" type="email" />
+            </label>
+            <label>
+              Affiliation
+              <input name="profile.affiliation" type="text" />
+            </label>
+            <label>
+              Location
+              <input name="profile.location" type="text" />
+            </label>
+            <label>
+              Photo path
+              <input name="profile.photo" type="text" />
+            </label>
+            <label>
+              Replace photo locally
+              <input id="photo-upload" type="file" accept="image/*" />
+            </label>
+            <p class="field-hint">
+              Uploading here gives you a preview and filename suggestion. Commit the image into `assets/images/` and keep the path above in sync.
+            </p>
+            <div class="photo-preview-wrap">
+              <img id="photo-preview" alt="Photo preview" />
+            </div>
+          </div>
+
+          <div class="editor-panel">
+            <div class="panel-heading">
+              <p class="eyebrow">Sections</p>
+              <h2>Homepage content</h2>
+            </div>
+            <label>
+              About
+              <textarea name="sections.about" rows="5"></textarea>
+            </label>
+            <label>
+              Research
+              <textarea name="sections.research" rows="5"></textarea>
+            </label>
+            <label>
+              Teaching / advising
+              <textarea name="sections.teaching" rows="4"></textarea>
+            </label>
+          </div>
+
+          <div class="editor-panel full-width">
+            <div class="panel-heading">
+              <p class="eyebrow">Publications</p>
+              <h2>Edit structured entries</h2>
+            </div>
+            <label>
+              Paste BibTeX
+              <textarea id="bibtex-input" rows="10" placeholder="@article{key,&#10;  title = {...},&#10;  author = {...},&#10;  journal = {...},&#10;  year = {...},&#10;  url = {...}&#10;}"></textarea>
+            </label>
+            <p class="field-hint">
+              Paste one BibTeX entry and import it into the publication list. You can still adjust the fields manually afterward.
+            </p>
+            <div class="panel-actions">
+              <button class="button secondary" id="import-bibtex" type="button">Import BibTeX</button>
+              <button class="button secondary" id="add-publication" type="button">Add publication</button>
+            </div>
+            <div id="publication-editor-list" class="stack-list"></div>
+          </div>
+
+          <div class="editor-panel full-width">
+            <div class="panel-heading">
+              <p class="eyebrow">Hidden gallery</p>
+              <h2>Private collections</h2>
+            </div>
+            <label>
+              Secret path
+              <input name="gallery.secretPath" type="text" />
+            </label>
+            <label>
+              Gallery intro
+              <textarea name="gallery.intro" rows="3"></textarea>
+            </label>
+            <div class="panel-actions">
+              <button class="button secondary" id="add-collection" type="button">Add collection</button>
+            </div>
+            <div id="gallery-editor-list" class="stack-list"></div>
+          </div>
+        </form>
+
+        <aside class="admin-sidebar">
+          <div class="editor-panel">
+            <div class="panel-heading">
+              <p class="eyebrow">Workflow</p>
+              <h2>GitHub maintenance</h2>
+            </div>
+            <ol class="workflow-list">
+              <li>Update content here.</li>
+              <li>Export `site.json`.</li>
+              <li>Commit the downloaded file into `data/site.json`.</li>
+              <li>Commit any new portrait or gallery image files under `assets/images/`.</li>
+              <li>Push to GitHub Pages.</li>
+            </ol>
+          </div>
+          <div class="editor-panel">
+            <div class="panel-heading">
+              <p class="eyebrow">Tip</p>
+              <h2>Keep the gallery quiet</h2>
+            </div>
+            <p>
+              The gallery only opens when the URL path matches your secret path, for example `/nocturne-room`.
+              It is intentionally absent from the main navigation.
+            </p>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <template id="publication-editor-template">
+      <section class="editor-item">
+        <div class="editor-item-head">
+          <h3>Publication</h3>
+          <button class="text-button remove-item" type="button">Remove</button>
+        </div>
+        <div class="editor-item-grid">
+          <label>Title<input data-field="title" type="text" /></label>
+          <label>Authors<input data-field="authors" type="text" /></label>
+          <label>Venue<input data-field="venue" type="text" /></label>
+          <label>Year<input data-field="year" type="number" /></label>
+          <label>
+            Type
+            <select data-field="type">
+              <option>Conference</option>
+              <option>Journal</option>
+              <option>Preprint</option>
+              <option>Workshop</option>
+            </select>
+          </label>
+          <label class="checkbox-row"><input data-field="featured" type="checkbox" /> Featured</label>
+          <label class="full-span">Thumbnail image path<input data-field="image" type="text" /></label>
+          <label class="full-span">Abstract<textarea data-field="abstract" rows="4"></textarea></label>
+          <label>Primary link label<input data-field="linkLabel" type="text" /></label>
+          <label>Primary link URL<input data-field="linkUrl" type="text" /></label>
+        </div>
+      </section>
+    </template>
+
+    <template id="gallery-editor-template">
+      <section class="editor-item">
+        <div class="editor-item-head">
+          <h3>Collection</h3>
+          <button class="text-button remove-item" type="button">Remove</button>
+        </div>
+        <div class="editor-item-grid">
+          <label>Title<input data-field="title" type="text" /></label>
+          <label>Year<input data-field="year" type="text" /></label>
+          <label class="full-span">Description<textarea data-field="description" rows="3"></textarea></label>
+          <label class="full-span">Cover path<input data-field="cover" type="text" /></label>
+        </div>
+      </section>
+    </template>
+
+    <script type="module" src="../assets/js/admin.js"></script>
+  </body>
+</html>
