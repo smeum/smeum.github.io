@@ -428,11 +428,12 @@ h3 {
 .venue-line {
   color: var(--accent);
   font-size: 0.84rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .publication-venue {
   color: var(--accent);
+  font-weight: 500;
 }
 
 .publication-authors {
@@ -464,6 +465,55 @@ h3 {
 
 .publication-links a {
   color: var(--accent);
+}
+
+.bibtex-link {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+}
+
+.bibtex-modal {
+  width: min(680px, calc(100vw - 32px));
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+  background: var(--paper-strong);
+  box-shadow: var(--shadow);
+}
+
+.bibtex-modal::backdrop {
+  background: rgba(26, 24, 21, 0.28);
+}
+
+.bibtex-modal-head,
+.bibtex-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.bibtex-modal-head h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.bibtex-content {
+  margin: 16px 0;
+  padding: 14px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.64);
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  overflow-x: auto;
+  white-space: pre-wrap;
 }
 
 .gallery-header,

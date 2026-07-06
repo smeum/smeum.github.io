@@ -4,14 +4,15 @@
   },
   "profile": {
     "name": "Sungmin Eum",
-    "title": "Research Scientist/PI at [US Army Research Laboratory (ARL)](https://arl.devcom.army.mil/)\nAdjunct Faculty at the [University of Maryland, College Park](https://umd.edu/)",
+    "title": "Research Scientist/PI at [US Army Research Laboratory (ARL)](https://arl.devcom.army.mil/)Adjunct Faculty at the [University of Maryland, College Park](https://umd.edu/)",
     "tagline": "Computer vision, machine learning, robotics, and language-grounded AI with an emphasis on models that solve complex tasks with limited supervision.",
     "email": "sungmin dot eum dot civ at army dot mil | smeum at umd dot edu",
     "location": "MD, VA, Washington DC, USA",
     "affiliation": "U.S. Army Research Laboratory · University of Maryland",
     "photo": "assets/images/sungminFace_v2.jpg",
     "cvUrl": "#",
-    "scholarUrl": "https://scholar.google.com/citations?user=tT5GULUAAAAJ&hl=en"
+    "scholarUrl": "https://scholar.google.com/citations?user=tT5GULUAAAAJ&hl=en",
+    "intro": ""
   },
   "featured": [
     {
@@ -41,14 +42,11 @@
       "type": "Conference",
       "image": "assets/images/publications/Yim_arXiv2024.png",
       "abstract": "A synthetic human dataset designed to better import real-world diversity into controlled training data for perception systems.",
+      "bibtex": "@INPROCEEDINGS{yim2026synplay,\n  author={Yim, Jinsub and Lee, Hyungtae and Eum, Sungmin and Shen, Yi-Ting and Zhang, Yan and Kwon, Heesung and Bhattacharyya, Shuvra S.},\n  booktitle={WACV}, \n  title={SynPlay: Large-Scale Synthetic Human Data with Real-World Diversity for Aerial-View Perception}, \n  year={2026},\n  pages={938-947},\n  doi={10.1109/WACV61042.2026.00098}}\n",
       "links": [
         {
           "label": "Paper",
           "url": "https://openaccess.thecvf.com/content/WACV2026/papers/Yim_SynPlay_Large-Scale_Synthetic_Human_Data_with_Real-World_Diversity_for_Aerial-View_WACV_2026_paper.pdf"
-        },
-        {
-          "label": "Project",
-          "url": "http://synplaydataset.github.io/"
         }
       ],
       "featured": false
@@ -61,14 +59,11 @@
       "type": "Conference",
       "image": "assets/images/publications/Choi_AAAI2026.png",
       "abstract": "A dynamic neural rendering method for human-centric UAV imagery using Gaussian Splatting to model motion-aware aerial capture.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
           "url": "https://ojs.aaai.org/index.php/AAAI/article/view/37333"
-        },
-        {
-          "label": "Project",
-          "url": "https://uav4d.github.io/"
         }
       ],
       "featured": false
@@ -81,6 +76,7 @@
       "type": "Conference",
       "image": "assets/images/publications/Jung_WACV2026.png",
       "abstract": "A monocular geometry refinement framework that uses graph optimization to enforce cross-view consistency in reconstructed scene structure.",
+      "bibtex": "@INPROCEEDINGS{jung2026more,\n  author={Jung, Dongki and Choi, Jaehoon and Lee, Yonghan and Eum, Sungmin and Kwon, Heesung and Manocha, Dinesh},\n  booktitle={WACV}, \n  title={MoRe: Monocular Geometry Refinement via Graph Optimization for Cross-View Consistency}, \n  year={2026},\n  pages={4838-4848},\n  doi={10.1109/WACV61042.2026.00470}}\n",
       "links": [
         {
           "label": "Paper",
@@ -97,14 +93,11 @@
       "type": "Conference",
       "image": "assets/images/publications/Shen_ICCV2025.png",
       "abstract": "A multimodal LLM framework for automatically generating pose transition descriptions to support composed pose retrieval.",
+      "bibtex": "@INPROCEEDINGS{shen2025autocompose,\n  author={Shen, Yi-Ting and Eum, Sungmin and Lee, Doheon and Shete, Rohit and Wang, Chiao-Yi and Kwon, Heesung and Bhattacharyy, Shuvra S.},\n  booktitle={ICCV}, \n  title={Autocompose: Automatic Generation of Pose Transition Descriptions for Composed Pose Retrieval Using Multimodal LLMs}, \n  year={2025},\n  pages={7409-7418},\n  doi={10.1109/ICCV51701.2025.00695}}\n",
       "links": [
         {
           "label": "Paper",
           "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Shen_AutoComPose_Automatic_Generation_of_Pose_Transition_Descriptions_for_Composed_Pose_ICCV_2025_paper.pdf"
-        },
-        {
-          "label": "Code",
-          "url": "https://github.com/DennisShen/AutoComPose-ICCV2025"
         }
       ],
       "featured": true
@@ -117,14 +110,11 @@
       "type": "Preprint",
       "image": "assets/images/publications/Choi_ArXiv2025.png",
       "abstract": "A neural digital twin framework for UAVs using Gaussian Splatting to represent and simulate aerial platforms and captured environments.",
+      "bibtex": "",
       "links": [
         {
           "label": "Preprint",
           "url": "https://arxiv.org/pdf/2504.02158"
-        },
-        {
-          "label": "Project",
-          "url": "https://uavgsim.github.io/"
         }
       ],
       "featured": false
@@ -137,6 +127,7 @@
       "type": "Preprint",
       "image": "assets/images/publications/Zhou_ArXiv2025.png",
       "abstract": "A generative augmentation framework for spatiotemporal data that expands training diversity while preserving task-relevant motion structure.",
+      "bibtex": "",
       "links": [
         {
           "label": "Preprint",
@@ -153,6 +144,7 @@
       "type": "Preprint",
       "image": "assets/images/publications/Li_ArXiv2026.png",
       "abstract": "A diffusion-based coarse-to-fine alignment method for UAV-based human detection that improves localization under challenging aerial viewpoints.",
+      "bibtex": "",
       "links": [
         {
           "label": "Preprint",
@@ -169,6 +161,7 @@
       "type": "Conference",
       "image": "assets/images/publications/Eum_IROS2024.png",
       "abstract": "An unsupervised obstacle segmentation approach that uses depth during training only, guided by a dual-teacher setup for stronger visual learning.",
+      "bibtex": "@INPROCEEDINGS{eum2024two,\n  author={Eum, Sungmin and Lee, Hyungtae and Kwon, Heesung and Osteen, Phil and Harrison, Andre},\n  booktitle={IROS}, \n  title={Two Teachers Are Better Than One: Leveraging Depth In Training Only For Unsupervised Obstacle Segmentation}, \n  year={2024},\n  pages={10716-10723},\n  doi={10.1109/IROS58592.2024.10801483}}\n",
       "links": [
         {
           "label": "Paper",
@@ -185,6 +178,7 @@
       "type": "Conference",
       "image": "assets/images/publications/Lukin_AAAIW2023.png",
       "abstract": "A controllable generation framework that produces narratives from image input while maintaining user influence over the resulting storyline.",
+      "bibtex": "@inproceedings{\nlukin2023seetell,\ntitle={{SEE}\\&{TELL}: Controllable Narrative Generation from Images},\nauthor={Stephanie M. Lukin and Sungmin Eum},\nbooktitle={The AAAI-23 Workshop on Creative AI Across Modalities},\nyear={2023},\n}",
       "links": [
         {
           "label": "Paper",
@@ -192,7 +186,7 @@
         }
       ],
       "featured": false
-    }, 
+    },
     {
       "title": "Exploring Cross-Domain Pretrained Model for Hyperspectral Image Classification",
       "authors": "Hyungtae Lee, Sungmin Eum, Heesung Kwon",
@@ -201,6 +195,7 @@
       "type": "Journal",
       "image": "assets/images/publications/Lee_TGRS2022.png",
       "abstract": "A study of cross-domain pretrained models for hyperspectral image classification and how transfer priors affect remote sensing performance.",
+      "bibtex": "@ARTICLE{lee2022exploring,\n  author={Lee, Hyungtae and Eum, Sungmin and Kwon, Heesung},\n  journal={IEEE Transactions on Geoscience and Remote Sensing}, \n  title={Exploring Cross-Domain Pretrained Model for Hyperspectral Image Classification}, \n  year={2022},\n  volume={60},\n  number={},\n  pages={1-12},\n  doi={10.1109/TGRS.2022.3165441}}\n",
       "links": [
         {
           "label": "Paper",
@@ -217,14 +212,11 @@
       "type": "Conference",
       "image": "assets/images/publications/Lee_ECCV2022.png",
       "abstract": "A re-identification method that improves metric learning by strengthening the role of difficult negative samples during optimization.",
+      "bibtex": "@inproceedings{\nlukin2023seetell,\ntitle={Negative Samples are at Large: Leveraging Hard-distance Elastic Loss for Re-identification},\nauthor={Lee, Hyungtae and Eum, Sungmin and Kwon, Heesung},\nbooktitle={ECCV},\nyear={2022},\n}",
       "links": [
         {
           "label": "Paper",
           "url": "https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136840595.pdf"
-        },
-        {
-          "label": "Code",
-          "url": "https://github.com/htlee79/moreid"
         }
       ],
       "featured": false
@@ -237,6 +229,7 @@
       "type": "Conference",
       "image": "assets/images/publications/Das_SoCS2022.png",
       "abstract": "An anytime planning framework that reasons jointly about model fidelity and simulation-backed verification in difficult terrain.",
+      "bibtex": "@inproceedings{das2022ma3,\n  title     = {MA3: Model-Accuracy Aware Anytime Planning with Simulation Verification for Navigating Complex Terrains},\n  author    = {Das, Manash Pratim and Conover, Damon M. and Eum, Sungmin and Kwon, Heesung and Likhachev, Maxim},\n  booktitle = {Proceedings of the International Symposium on Combinatorial Search (SoCS)},\n  year      = {2022},\n  doi       = {10.1609/socs.v15i1.21753}\n}",
       "links": [
         {
           "label": "Paper",
@@ -253,6 +246,7 @@
       "type": "Journal",
       "image": "assets/images/publications/Jin_IEEEAccess2021.png",
       "abstract": "A segmentation architecture that uses sparse sketch-like guidance to complete dense semantic structure.",
+      "bibtex": "@ARTICLE{jin2021sketchandfill,\n  author={Jin, Youngsaeng and Eum, Sungmin and Han, David and Ko, Hanseok},\n  journal={IEEE Access}, \n  title={Sketch-and-Fill Network for Semantic Segmentation}, \n  year={2021},\n  volume={9},\n  number={},\n  pages={85874-85884},\n  doi={10.1109/ACCESS.2021.3088854}}\n",
       "links": [
         {
           "label": "Paper",
@@ -269,6 +263,7 @@
       "type": "Conference",
       "image": "assets/images/publications/Eum_ICPR2020.png",
       "abstract": "A zero-shot inferencing approach that embeds semantics into spatial structure for verb-object query understanding.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
@@ -285,6 +280,7 @@
       "type": "Conference",
       "image": "assets/images/publications/Lee_ICASSP2020.png",
       "abstract": "A unified event recognition framework that improves recognition by preserving and doubly injecting spatial object detection features into the event classifier through both shared representations and direct spatial feature fusion.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
@@ -301,6 +297,7 @@
       "type": "Conference",
       "image": "assets/images/publications/Eum_CVPRW2020.png",
       "abstract": "A language-guided method for identifying and localizing underspecified regions in an image from referring expressions.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
@@ -317,6 +314,7 @@
       "type": "Journal",
       "image": "assets/images/publications/Lee_TIP2019.png",
       "abstract": "A multi-expert detection framework that improves object detection by specializing submodels across object appearance regimes.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
@@ -333,14 +331,11 @@
       "type": "Conference",
       "image": "assets/images/publications/Wigness_IROS2019.png",
       "abstract": "A dataset for navigation and visual perception in rugged outdoor settings, aimed at autonomous systems operating beyond structured roads.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
           "url": "https://ieeexplore.ieee.org/abstract/document/8968283"
-        },
-        {
-          "label": "Dataset",
-          "url": "http://rugd.vision/"
         }
       ],
       "featured": false
@@ -353,6 +348,7 @@
       "type": "Journal",
       "image": "assets/images/publications/Eum_PRL2019.png",
       "abstract": "A method for selecting planar image and video content by reasoning about frontalness as a useful geometric prior.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
@@ -369,6 +365,7 @@
       "type": "Conference",
       "image": "assets/images/publications/Lee_IGARSS2018.png",
       "abstract": "A study of whether large-scale pretraining is necessary for hyperspectral image classification and how transfer strategies affect downstream performance.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
@@ -385,6 +382,7 @@
       "type": "Conference",
       "image": "assets/images/publications/Lee_ICASSP2019.png",
       "abstract": "An event recognition framework that improves accuracy by injecting object detection cues into the classifier through multiple pathways.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
@@ -401,6 +399,7 @@
       "type": "Conference",
       "image": "assets/images/publications/Eum_ICASSP2019.png",
       "abstract": "A CNN-based activity recognition approach that integrates both object cues and text-guided semantic structure for better scene understanding.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
@@ -417,6 +416,7 @@
       "type": "Conference",
       "image": "assets/images/publications/Lee_IGARSS2018.png",
       "abstract": "A cross-domain convolutional model for hyperspectral image classification that studies transfer across sensing domains and labeled data regimes.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
@@ -433,6 +433,7 @@
       "type": "Conference",
       "image": "assets/images/publications/Eum_SPIEDCS2018.png",
       "abstract": "An exploration of deeper convolutional architectures for malicious crowd event classification under challenging visual conditions.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
@@ -449,6 +450,7 @@
       "type": "Conference",
       "image": "assets/images/publications/Eum_ICASSP2018.png",
       "abstract": "A malicious event classification method that leverages semantic keyword structure to improve discrimination in complex crowd scenes.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
@@ -465,6 +467,7 @@
       "type": "Conference",
       "image": "assets/images/publications/Eum_ICIP2017.png",
       "abstract": "An event recognition architecture that integrates object detection networks directly into the event understanding pipeline.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
@@ -481,14 +484,11 @@
       "type": "Conference",
       "image": "assets/images/publications/Eum_ICPR2016.png",
       "abstract": "A multi-frame content selection approach using frontalness evaluation, recognized with the ICPR Best Student Paper distinction.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
           "url": "https://ieeexplore.ieee.org/abstract/document/7900160"
-        },
-        {
-          "label": "Award",
-          "url": "https://iapr.org/awards/icpr-awards/p-zamperoni-award/"
         }
       ],
       "featured": false
@@ -501,6 +501,7 @@
       "type": "Conference",
       "image": "assets/images/publications/Eum_BMVC2015.png",
       "abstract": "A joint homography estimation method for robust highlight removal in challenging document and scene imagery.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
@@ -517,6 +518,7 @@
       "type": "Conference",
       "image": "assets/images/publications/Eum_ICIP2014.png",
       "abstract": "A graphcut-based document mosaicing method that explicitly accounts for sharpness while assembling image fragments.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
@@ -533,6 +535,7 @@
       "type": "Journal",
       "image": "assets/images/publications/Eum_TITS2013.png",
       "abstract": "A lane-aware light blob detection approach for intelligent headlight control in real driving environments.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
@@ -549,6 +552,7 @@
       "type": "Journal",
       "image": "assets/images/publications/Suhr_PR2012.png",
       "abstract": "An evaluation framework for facial image recognizability tailored to automated teller machine deployment scenarios.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
@@ -565,6 +569,7 @@
       "type": "Conference",
       "image": "assets/images/publications/Kim_ICB2012.png",
       "abstract": "A face liveness detection method combining texture and frequency analysis for biometric security applications.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
@@ -581,6 +586,7 @@
       "type": "Conference",
       "image": "assets/images/publications/Eum_CVPRW2011.png",
       "abstract": "A recognizability evaluation framework for ATM facial imagery with explicit handling of severe occlusion cases.",
+      "bibtex": "",
       "links": [
         {
           "label": "Paper",
@@ -630,5 +636,6 @@
         "cover": "assets/images/gallery/the_interval_2026.png"
       }
     ]
-  }
+  },
+  "viewport": ""
 }

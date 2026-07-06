@@ -69,6 +69,7 @@ function renderPublicationEditors() {
     setEditorField(item, 'type', publication.type);
     setEditorField(item, 'image', publication.image || 'assets/images/pub-placeholder.svg');
     setEditorField(item, 'abstract', publication.abstract);
+    setEditorField(item, 'bibtex', publication.bibtex || '');
     setEditorField(item, 'linkLabel', publication.links?.[0]?.label || 'Paper');
     setEditorField(item, 'linkUrl', publication.links?.[0]?.url || '#');
     item.querySelector('[data-field="featured"]').checked = Boolean(publication.featured);
@@ -111,6 +112,7 @@ function syncPublicationEditors() {
     type: getEditorField(item, 'type'),
     image: getEditorField(item, 'image') || 'assets/images/pub-placeholder.svg',
     abstract: getEditorField(item, 'abstract'),
+    bibtex: getEditorField(item, 'bibtex'),
     links: [
       {
         label: getEditorField(item, 'linkLabel') || 'Paper',
@@ -206,6 +208,7 @@ function createEmptyPublication() {
     type: 'Conference',
     image: 'assets/images/pub-placeholder.svg',
     abstract: '',
+    bibtex: '',
     links: [{ label: 'Paper', url: '#' }],
     featured: false
   };
@@ -237,6 +240,7 @@ function parseBibtexEntry(source) {
     type: inferPublicationType(entryType),
     image: 'assets/images/pub-placeholder.svg',
     abstract: fields.abstract || '',
+    bibtex: source.trim(),
     links: [{ label: fields.url ? 'Paper' : 'Reference', url }],
     featured: false
   };

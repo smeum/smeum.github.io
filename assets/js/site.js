@@ -15,6 +15,7 @@ async function loadSite() {
   state.data = await response.json();
   render();
   bindFilters();
+  bindBibtexModal();
 }
 
 function render() {
@@ -77,6 +78,7 @@ function renderPublications(publications, profileName) {
     const links = document.createElement('div');
     links.className = 'publication-links';
     appendLinks(links, featured.links);
+    appendBibtexAction(links, featured.bibtex);
     copy.append(eyebrow, title, authors, venue, abstract, links);
     hero.append(visual, copy);
     featuredRoot.appendChild(hero);
@@ -94,6 +96,7 @@ function renderPublications(publications, profileName) {
     fragment.querySelector('.publication-venue').textContent = publication.venue;
     fragment.querySelector('.publication-abstract').textContent = publication.abstract;
     appendLinks(fragment.querySelector('.publication-links'), publication.links);
+    appendBibtexAction(fragment.querySelector('.publication-links'), publication.bibtex);
     listRoot.appendChild(fragment);
   });
 }
@@ -154,6 +157,17 @@ function appendLinks(root, links = []) {
   });
 }
 
+function appendBibtexAction(root, bibtex) {
+  if (!bibtex) return;
+
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'bibtex-link';
+  button.textContent = 'BibTeX';
+  button.addEventListener('click', () => openBibtexModal(bibtex));
+  root.appendChild(button);
+}
+
 function highlightAuthorName(authors, profileName) {
   if (!authors || !profileName) return authors || '';
 
@@ -180,6 +194,28 @@ function renderProfileEmail(value) {
 function renderRichText(id, value) {
   const node = document.getElementById(id);
   node.innerHTML = formatRichText(value || '');
+}
+
+function bindBibtexModal() {
+  const modal = document.getElementById('bibtex-modal');
+  const closeButton = document.getElementById('close-bibtex');
+  const copyButton = document.getElementById('copy-bibtex');
+
+  closeButton.addEventListener('click', () => modal.close());
+  copyButton.addEventListener('click', async () => {
+    const content = document.getElementById('bibtex-content').textContent;
+    await navigator.clipboard.writeText(content);
+    copyButton.textContent = 'Copied';
+    window.setTimeout(() => {
+      copyButton.textContent = 'Copy BibTeX';
+    }, 1200);
+  });
+}
+
+function openBibtexModal(bibtex) {
+  const modal = document.getElementById('bibtex-modal');
+  document.getElementById('bibtex-content').textContent = bibtex;
+  modal.showModal();
 }
 
 function formatProfileTitle(value) {
