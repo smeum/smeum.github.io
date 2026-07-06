@@ -1,6 +1,6 @@
-# Personal Academic Website
+# Personal Website
 
-Static personal academic site designed for GitHub Pages.
+Static personal academic site designed by me.
 
 ## Structure
 
@@ -17,16 +17,3 @@ Static personal academic site designed for GitHub Pages.
 4. Replace `data/site.json` in the repo with the exported file.
 5. Commit any new image assets referenced in the JSON.
 6. Push to GitHub.
-
-## Hidden gallery
-
-The gallery is intentionally absent from the main navigation.
-
-- Set `gallery.secretPath` in `data/site.json`.
-- Visit `/<secretPath>` on the deployed site to reveal it.
-
-Example: `https://yourusername.github.io/nocturne-room`
-
-## GitHub Pages
-
-This is a plain static site. You can deploy it directly with GitHub Pages from the repository root.
