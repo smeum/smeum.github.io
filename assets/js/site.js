@@ -128,7 +128,7 @@ function bindFilters() {
       state.filter = button.dataset.filter;
       document.querySelectorAll('.chip').forEach((chip) => chip.classList.remove('active'));
       button.classList.add('active');
-      renderPublications(state.data.publications);
+      renderPublications(state.data.publications, state.data.profile.name);
     });
   });
 

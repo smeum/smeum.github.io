@@ -444,8 +444,8 @@ h3 {
 }
 
 .author-highlight {
-  color: var(--ink);
-  font-weight: 700;
+  color: rgba(26, 24, 21, 0.86);
+  font-weight: 500;
   letter-spacing: 0;
 }
 
