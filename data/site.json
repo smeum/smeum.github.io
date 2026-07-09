@@ -37,7 +37,7 @@
     {
       "title": "POPS: Recovering Unlearned Multi-Modality Knowledge in MLLMs with Prompt-Optimized Parameter Shaking",
       "authors": "Zhangheng Li, Jianing Zhu, Junyuan Hong, Sungmin Eum, Shuowen Hu, Suya You, Zhangyang Wang",
-      "venue": "TMLR",
+      "venue": "Transactions on Machine Learning Research (TMLR)",
       "year": 2026,
       "type": "Journal",
       "image": "assets/images/publications/Li_TMLR2026.png",

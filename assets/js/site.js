@@ -33,6 +33,7 @@ function render() {
   renderRichText('about-text', sections.about);
   renderRichText('research-text', sections.research);
 
+  updatePublicationFilterCounts(publications);
   renderPublications(publications, profile.name);
   renderGallery(gallery.collections);
 }
@@ -98,6 +99,24 @@ function renderPublications(publications, profileName) {
     appendLinks(fragment.querySelector('.publication-links'), publication.links);
     appendBibtexAction(fragment.querySelector('.publication-links'), publication.bibtex);
     listRoot.appendChild(fragment);
+  });
+}
+
+function updatePublicationFilterCounts(publications) {
+  const currentYear = new Date().getFullYear();
+  const counts = {
+    Recent: publications.filter((item) => Number(item.year) >= currentYear - 2).length,
+    All: publications.length,
+    Conference: publications.filter((item) => item.type === 'Conference').length,
+    Journal: publications.filter((item) => item.type === 'Journal').length,
+    Preprint: publications.filter((item) => item.type === 'Preprint').length
+  };
+
+  document.querySelectorAll('.chip').forEach((button) => {
+    const filter = button.dataset.filter;
+    if (counts[filter] !== undefined) {
+      button.textContent = `${filter} (${counts[filter]})`;
+    }
   });
 }
 
