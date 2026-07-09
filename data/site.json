@@ -40,13 +40,17 @@
       "venue": "TMLR",
       "year": 2026,
       "type": "Journal",
-      "image": "assets/images/Li_TMLR2026.png",
-      "abstract": "A novel adversarial strategy, namely Prompt-Optimized Parameter Shaking (POPS), aiming to recover the supposedly unlearned multi-modality knowledge from the MLLMs. Our method elicits the victim MLLMs to generate potential private examples via prompt-suffix optimization, and then exploits these synthesized outputs to fine-tune the models so they disclose the true private information.",
+      "image": "assets/images/publications/Li_TMLR2026.png",
+      "abstract": "A novel adversarial strategy, namely Prompt-Optimized Parameter Shaking (POPS), aiming to recover the supposedly unlearned multi-modality knowledge from the MLLMs.",
       "bibtex": "@misc{li2026pops,\n      title={POPS: Recovering Unlearned Multi-Modality Knowledge in MLLMs with Prompt-Optimized Parameter Shaking}, \n      author={Zhangheng LI and Jianing Zhu and Junyuan Hong and Sungmin Eum and Shuowen Hu and Suya You and Zhangyang Wang},\n      year={2026},\n      eprint={2607.06649},\n      archivePrefix={arXiv},\n      primaryClass={cs.CR},\n      url={https://arxiv.org/abs/2607.06649}, \n}",
       "links": [
         {
           "label": "Paper",
           "url": "https://arxiv.org/pdf/2607.06649"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/VITA-Group/POPS"
         }
       ],
       "featured": true

@@ -147,14 +147,25 @@ function bindFilters() {
 
 function appendLinks(root, links = []) {
   root.innerHTML = '';
-  links.forEach((link) => {
+  const linkPriority = {
+    Paper: 0,
+    Code: 1
+  };
+
+  [...links]
+    .sort((a, b) => {
+      const left = linkPriority[a.label] ?? 99;
+      const right = linkPriority[b.label] ?? 99;
+      return left - right || a.label.localeCompare(b.label);
+    })
+    .forEach((link) => {
     const anchor = document.createElement('a');
     anchor.href = link.url;
     anchor.textContent = link.label;
     anchor.target = '_blank';
     anchor.rel = 'noreferrer';
     root.appendChild(anchor);
-  });
+    });
 }
 
 function appendBibtexAction(root, bibtex) {
