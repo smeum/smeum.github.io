@@ -4,7 +4,7 @@
   },
   "profile": {
     "name": "Sungmin Eum",
-    "title": "Research Scientist/PI at [US Army Research Laboratory (ARL)](https://arl.devcom.army.mil/) Adjunct Faculty at the [University of Maryland, College Park](https://umd.edu/)",
+    "title": "Research Scientist/PI at [US Army Research Laboratory (ARL)](https://arl.devcom.army.mil/) \n Adjunct Faculty at the [University of Maryland, College Park](https://umd.edu/)",
     "tagline": "Computer vision, machine learning, robotics, and language-grounded AI with an emphasis on models that solve complex tasks with limited supervision.",
     "email": "sungmin dot eum dot civ at army dot mil | smeum at umd dot edu",
     "location": "MD, VA, Washington DC, USA",
@@ -655,6 +655,12 @@
         "year": "2026",
         "description": "Between the breath before the first note and the breath after the last lies a fleeting moment of quiet tension. This work lingers there, where anticipation becomes memory, and where silence speaks with the same quiet presence as the music itself. Inspired by my wife, J.",
         "cover": "assets/images/gallery/the_interval_2026.png"
+      },
+      {
+        "title": "Noonday Without Light",
+        "year": "2026",
+        "description": "What cannot be seen is sought by touch alone, where every surface promises direction yet yields only uncertainty. Blindness extends beyond the eyes into the wandering of the soul. Inspired by Isaiah 59:10.",
+        "cover": "assets/images/gallery/noonday_without_light_2026.png"
       }
     ]
   },
